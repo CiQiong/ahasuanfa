@@ -51,3 +51,16 @@ int main(){
 Êä³ö
 0 1 8 4 13 17
 */
+
+
+int n,m,i;
+int u[6],v[6],w[6];
+int first[5],next[5];
+scanf("%d %d",&n,&m);
+for(i=1;i<=n;i++)
+	first[i]=-1;
+for(i=1;i<=m;i++){
+	scanf("%d %d %d",&u[i],&v[i],&w[i]);
+	next[i]=first[u[i]];
+	first[u[i]]=i;
+} 
